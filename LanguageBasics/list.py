@@ -34,7 +34,7 @@ fruits.insert(1, "orange")
 
 print(fruits)
 
-# pop(index) Removes the element at the specified position
+# pop(index) Removes the element at the specified position. Defaults to last item in list if index is not provided.
 fruits.pop(1)
 
 print(fruits)
@@ -98,3 +98,22 @@ squares = squares + [36, 49, 64, 81, 100]
 # [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 
 print("concatenation", squares)
+
+squares.pop()
+
+print("no index provided to pop method. Pop off last item from list: ", squares)
+# [1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+
+del squares[0]
+
+print(squares) # [4, 9, 16, 25, 36, 49, 64, 81]
+
+# delete values from index 1(inclusive) to index 3(exclusive) using slice
+del squares[1:3]
+
+print(squares) # [4, 25, 36, 49, 64, 81]
+
+del squares[:]
+
+print(squares) # []

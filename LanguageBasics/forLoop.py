@@ -5,10 +5,14 @@
 
 range1 = range(2, 6, 2)
 for n in range1:
-  print(n)
+    print(n)
 
 # one argument only will be the stop 'exclusive'.
 range2 = range(5)
 
 for n in range2:
     print(n) # print numbers 0 - 4
+
+
+for index, value in enumerate(['tic', 'tac', 'toe']):
+    print(index, value)
