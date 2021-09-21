@@ -8,7 +8,6 @@ for x in range(10):
 squares # [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 
 squaresUsingMap= list(map(lambda x: x**2, range(10)))
-
 # A list comprehension consists of brackets containing an expression followed by a for clause, then zero or more for or if clauses.
 conciseWithLC = [x**2 for x in range(10)]
 
@@ -53,11 +52,11 @@ listWithLists = [[1,2,3], [4,5,6], [7,8,9]]
 
 # flatten without using listComprehension
 flattened = []
-for list in listWithLists:
-    for number in list:
+for listItem in listWithLists:
+    for number in listItem:
         flattened.append(number)
 
-print(flattened)
+print("flattened: " + str(flattened))
 
 # Nested List Comprehensions
 

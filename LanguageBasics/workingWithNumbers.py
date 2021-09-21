@@ -31,3 +31,18 @@ fiveSquared = 5 ** 2  # 5 squared
 
 twoToThePowerOfSeven = 2 ** 7  # 2 to the power of 7
 # 128
+
+floatingNum = 43.212333333
+
+# Before f-strings were introduced Python used format method
+formattedFloat = float("{:.2f}".format(43.212333333))
+
+# f strings
+fFloat = float(f"{floatingNum:.2f}")
+fFloat2 = f"{float(floatingNum):.2f}"
+
+
+
+print("formattedFloat: ", formattedFloat)
+print("fFloat: ", fFloat)
+print("fFloat2: ", fFloat2)
