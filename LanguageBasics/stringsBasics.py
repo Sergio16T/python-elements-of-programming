@@ -1,7 +1,7 @@
 s = 'hi'
-print(s[1])    ## i
-print(len(s))  ## 2
-print(s + ' there')  ## hi there
+print(s[1])  # i
+print(len(s))  # 2
+print(s + ' there')  # hi there
 
 string = 'Python'
 
@@ -10,11 +10,10 @@ length = len(string)
 print(length)
 
 lastCharacter = string[length - 1]
-lastCharacterWithNegative = string[-1] # OR use negative indices to indicate to begin counting from the right
+lastCharacterWithNegative = string[-1]  # OR use negative indices to indicate to begin counting from the right
 
 print("lastCharacter: ", lastCharacter)
 print("lastCharacterWithNegative: ", lastCharacterWithNegative)
-
 
 #  *** STRING SLICING ***
 
@@ -24,20 +23,19 @@ print("""
 
 sliceFirstTwo = string[0:2]  # characters from index 0 (included) to 2 (excluded)
 
-print("sliceFirstTwo: ", sliceFirstTwo) # 'Py'
+print("sliceFirstTwo: ", sliceFirstTwo)  # 'Py'
 
 thirdLetterToFifthLetter = string[2:5]  # characters from index 2 (included) to 5 (excluded)
-print("thirdLetterToFourthLetter: ", thirdLetterToFifthLetter) # tho
+print("thirdLetterToFourthLetter: ", thirdLetterToFifthLetter)  # tho
 
-firstTwo = string[:2]   # character from the beginning to index 2 (excluded)
+firstTwo = string[:2]  # character from the beginning to index 2 (excluded)
 # 'Py'
-fourthToLast = string[4:]   # characters from index 4 (included) to the end
+fourthToLast = string[4:]  # characters from index 4 (included) to the end
 #  'on'
 
 lastTwo = string[-2:]
 
 print("lastTwo:", lastTwo)
-
 
 # *** MULTI LINE STRINGS ***
 
@@ -66,15 +64,13 @@ Usage: thingy [OPTIONS]
      -H hostname               Hostname to connect to
 """)
 
-
-
 # *** SINGLE VS DOUBLE QUOTES ***
 
 print("""
      *** SINGLE VS DOUBLE QUOTES ***
 """)
 
-singleQuotes ='spam eggs'  # single quotes
+singleQuotes = 'spam eggs'  # single quotes
 
 escapeSingleQuotes = 'doesn\'t'  # use \' to escape the single quote...
 # "doesn't"
@@ -84,22 +80,20 @@ print(doubleQuotes)
 # "doesn't"
 
 doubleQuotesWithin = '"Yes," they said.'
-print("doubleQuotesWithin", doubleQuotesWithin) # "Yes," they said.
-
+print("doubleQuotesWithin", doubleQuotesWithin)  # "Yes," they said.
 
 nestedDoubleQuotes = "\"Yes,\" they said."
 
-print(nestedDoubleQuotes) # "Yes," they said.
+print(nestedDoubleQuotes)  # "Yes," they said.
 
-st ='"Isn\'t," they said.'
-print(st) # "Isn't," they said.
-
-
+st = '"Isn\'t," they said.'
+print(st)  # "Isn't," they said.
 
 # *** Converting other types to string form ***
 
 pi = 3.14
-##text = 'The value of pi is ' + pi      ## NO, does not work: '+' does not automatically convert numbers or other types to string form
-text = 'The value of pi is '  + str(pi)  ## yes
+#  text = 'The value of pi is ' + pi
+# NO, does not work: '+' does not automatically convert numbers or other types to string form
+text = 'The value of pi is ' + str(pi)  # yes
 
 print(text)

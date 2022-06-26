@@ -38,17 +38,17 @@ vec = [-4, -2, 0, 2, 4]
 # call a method on each element
 freshfruit = ['  banana', '  loganberry ', 'passion fruit  ']
 stripped = [str.strip() for str in freshfruit]
-print(stripped) #['banana', 'loganberry', 'passion fruit']
+print(stripped)  # ['banana', 'loganberry', 'passion fruit']
 
 
 # create a list of 2-tuples like (number, square)
 tupleWithExpression = [(x, x**2) for x in range(6)]
 
-print("tupleWithExpression:", tupleWithExpression) # [(0, 0), (1, 1), (2, 4), (3, 9), (4, 16), (5, 25)]
+print("tupleWithExpression:", tupleWithExpression)  # [(0, 0), (1, 1), (2, 4), (3, 9), (4, 16), (5, 25)]
 
 # flatten a list using a listcomp with two 'for'
 listWithLists = [[1,2,3], [4,5,6], [7,8,9]]
-[num for list in listWithLists for num in list] # [1, 2, 3, 4, 5, 6, 7, 8, 9]
+[num for list in listWithLists for num in list]  # [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 # flatten without using listComprehension
 flattened = []
@@ -89,4 +89,4 @@ transposed2
 
 
 usingZip = list(zip(*matrix))
-print(usingZip) # [(1, 5, 9), (2, 6, 10), (3, 7, 11), (4, 8, 12)]
+print(usingZip)  # [(1, 5, 9), (2, 6, 10), (3, 7, 11), (4, 8, 12)]

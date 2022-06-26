@@ -11,7 +11,7 @@ for n in range1:
 range2 = range(5)
 
 for n in range2:
-    print(n) # print numbers 0 - 4
+    print(n)  # print numbers 0 - 4
 
 
 for index, value in enumerate(['tic', 'tac', 'toe']):

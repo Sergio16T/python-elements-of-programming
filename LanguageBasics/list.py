@@ -9,14 +9,14 @@ for car in cars:
 for i, car in enumerate(cars):
     cars[i] = car + " "
 
-#print modified cars
+# print modified cars
 print(cars)
 
 # modify via iterating through range in list
 for n in range(len(cars)):
     cars[n] += "car"
 
-#print modified cars
+# print modified cars
 print(cars)
 
 # add element to list
@@ -25,7 +25,6 @@ print(cars)
 cars.append("Honda")
 
 print(cars)
-
 
 fruits = ["apple", "banana", "cherry"]
 
@@ -55,16 +54,14 @@ indexOfBanana = fruits.index("banana")
 
 print("indexOfBanana", indexOfBanana)
 
-
 squares = [1, 4, 9, 16, 25]
 length = len(squares)
 
-secondToFourthItem = squares[1:4] # slice from index 1 (inclusive) to index 4 (exclusive)
+secondToFourthItem = squares[1:4]  # slice from index 1 (inclusive) to index 4 (exclusive)
 lastThree = squares[-3:]  # slicing returns a new list
-print("lastThree: ", lastThree) # [9, 16, 25]
+print("lastThree: ", lastThree)  # [9, 16, 25]
 
-
-lastItem = squares[-1] # 25 - use negative indices to indicate to begin counting from the right
+lastItem = squares[-1]  # 25 - use negative indices to indicate to begin counting from the right
 accessLastItem = squares[length - 1]
 
 print("lastItemAccess: ", {
@@ -72,26 +69,25 @@ print("lastItemAccess: ", {
     "accessLastItem": accessLastItem
 })
 
-secondToLastItem = squares[-2] # 16
+secondToLastItem = squares[-2]  # 16
 print("secondToLastItem: ", secondToLastItem)
 
-shallowCopyOfSquares = squares[:] # [1, 4, 9, 16, 25]
+shallowCopyOfSquares = squares[:]  # [1, 4, 9, 16, 25]
 
 # Assignment to slices is also possible, and this can even change the size of the list or clear it entirely:
 letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 
 # replace some values
 letters[2:5] = ['C', 'D', 'E']
-print("Assignment to slices", letters) # ['a', 'b', 'C', 'D', 'E', 'f', 'g']
+print("Assignment to slices", letters)  # ['a', 'b', 'C', 'D', 'E', 'f', 'g']
 
 # now remove them
 letters[2:5] = []
-print("remove values with assignment via slice", letters) #['a', 'b', 'f', 'g']
+print("remove values with assignment via slice", letters)  # ['a', 'b', 'f', 'g']
 
 # clear list entirely
-letters[:] = [] # OR letters.clear()
+letters[:] = []  # OR letters.clear()
 print("clear list", letters)
-
 
 # concatenation
 squares = squares + [36, 49, 64, 81, 100]
@@ -107,13 +103,13 @@ print("no index provided to pop method. Pop off last item from list: ", squares)
 
 del squares[0]
 
-print(squares) # [4, 9, 16, 25, 36, 49, 64, 81]
+print(squares)  # [4, 9, 16, 25, 36, 49, 64, 81]
 
 # delete values from index 1(inclusive) to index 3(exclusive) using slice
 del squares[1:3]
 
-print(squares) # [4, 25, 36, 49, 64, 81]
+print(squares)  # [4, 25, 36, 49, 64, 81]
 
 del squares[:]
 
-print(squares) # []
+print(squares)  # []

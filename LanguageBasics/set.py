@@ -5,3 +5,8 @@ print(basket)  # show that duplicates have been removed
 
 {'orange', 'banana', 'pear', 'apple'}
 print('orange' in basket)  # True
+
+
+set_of_fruits = set(['apple', 'orange', 'apple', 'pear', 'orange', 'banana'])
+
+print(set_of_fruits)

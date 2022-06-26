@@ -3,3 +3,10 @@
 
 ### Summary
 With this respository, I am providing examples and notes of the Python programming language using version 3.8.2. There are many working examples and they are organized into folders of related subjects.
+
+
+## Pycharm Setup
+
+### Python Intrepretor & Virtual Environment Setup
+
+### Debug/Run Configuration
