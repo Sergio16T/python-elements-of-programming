@@ -13,7 +13,7 @@ min_number = a if a < b else b
 print(min_number)
 
 # Use tuple for selecting an item
-# (if_test_false,if_test_true)[test]
+# (if_test_is_false, if_test_is_true)[test]
 print((b, a)[a < b])
 
 # Use Dictionary for selecting an item
